@@ -408,11 +408,21 @@ a:hover {
   font-family: "Fraunces", serif;
   font-weight: 700;
   line-height: 1.3889rem;
+  cursor: pointer;
 }
 .button--light {
-  background-color: #FFFFFF;
+  background: #FFFFFF;
   color: #FFFFFF;
-  opacity: 0.25;
+}
+.button--light:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.button--secondary {
+  background: #fad400;
+  color: #23303e;
+}
+.button--secondary:hover {
+  background: rgba(250, 212, 0, 0.25);
 }
 
 /*# sourceMappingURL=sunnyday.css.map */

@@ -8,14 +8,35 @@ $_very-dark-desaturated-blue: hsl(212, 27%, 19%);
 $_very-dark-grayish-blue: hsl(213, 9%, 39%);
 $_dark-grayish-blue: hsl(232, 10%, 55%);
 $_grayish-blue: hsl(210, 4%, 67%);
-$_creme: hsl(34, 100%, 99%);
 $_white: hsl(210, 4%, 67%);
 
-// UI Colors
-$primary-color: $_soft-red;
-$secondary-color: $_yellow;
+// Added colors
+$_creme: hsl(34, 100%, 99%);
+$_white2: hsl(255, 100%, 100%);
+$_red: hsl(1, 100%, 47%);
+$_yellow2: hsl(58, 100%, 49%);
+$_green: hsl(121, 100%, 40%);
 
+// Color theme
+$light-color: $_white2;
+$primary-color: $_soft-red;
+$secondary-color:  $_yellow;
+$sucess-color: $_green;
+$danger-color: $_red;
+$warming-color: $_yellow2;
+
+$color-theme: (
+    "light": $light-color,
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "sucess": $sucess-color,
+    "danger": $danger-color,
+    "warming": $warming-color
+);
+
+// UI Colors
 $bg-color: $_creme;
 $gd-text-color: $_dark-saturate-cyan;
 $photo-text-color: $_dark-blue;
+$btn-text-color: $_very-dark-desaturated-blue;
 $bg-footer: $_dark-moderate-cyan;

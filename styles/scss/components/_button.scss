@@ -1,4 +1,5 @@
 @use "../settings/typography";
+@use "../settings/colors";
 
 .button{
     padding: 0.8889rem 1.7778rem;
@@ -9,9 +10,23 @@
     font-weight: 700;
     line-height: 1.3889rem;
 
-    &--light{
-        background-color: #FFFFFF;
+    cursor: pointer;
+
+    &--light {
+        background: #FFFFFF;
         color: #FFFFFF;
-        opacity: 0.25;
+
+        &:hover{
+            background: rgba(#FFFFFF, 0.25);
+        }
+    }
+
+    &--secondary {
+        background: colors.$secondary-color;
+        color: colors.$btn-text-color;
+
+        &:hover{
+            background: rgba(colors.$secondary-color, 0.25);
+        }
     }
 }
