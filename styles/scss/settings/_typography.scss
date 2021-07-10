@@ -7,15 +7,31 @@ $font-fraunces: "Fraunce", serif;
 // Font sizes
 $_fs-base: 18;
 
+$_fs-56: math.div($_fs-base, 56) + rem;
 $_fs-40: math.div($_fs-base, 40) + rem;
 $_fs-32: math.div($_fs-base, 32) + rem;
 $_fs-28: math.div($_fs-base, 28) + rem;
+$_fs-20: math.div($_fs-base, 20) + rem;
 $_fs-18: math.div($_fs-base, 18) + rem;
 $_fs-16: math.div($_fs-base, 16) + rem;
 $_fs-15: math.div($_fs-base, 15) + rem;
 $_fs-14: math.div($_fs-base, 14) + rem;
 
 $fs-size: $_fs-base + px;
+
+// Headings sizes
+$headings-sizes: (
+    "h1": $_fs-56,
+    "h2": $_fs-32,
+    "h3": $_fs-28,
+    "h4": $_fs-18,
+    "h5": $_fs-16,
+    "h6": $_fs-14
+);
+
+$fs-line-headings: math.div($_fs-base, 49) + rem;
+
+$fs-p: $_fs-18;
 
 $fs-nav: $_fs-18;
 $fs-button: $_fs-15;
