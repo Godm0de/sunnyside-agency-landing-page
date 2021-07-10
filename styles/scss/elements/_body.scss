@@ -1,0 +1,8 @@
+@use "../settings/colors";
+@use "../settings/typography";
+
+body {
+    font-size: typography.$fs-size;
+
+    background-color: colors.$bg-color;
+}
