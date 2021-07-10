@@ -377,6 +377,7 @@ template {
 
 body {
   font-size: 18px;
+  font-family: "Barlow", sans-serif;
   background-color: #fffdfa;
 }
 
@@ -398,6 +399,20 @@ a:hover {
   .container {
     max-width: 77vw;
   }
+}
+
+.button {
+  padding: 0.8889rem 1.7778rem;
+  border: 0;
+  border-radius: 1.5556rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  line-height: 1.3889rem;
+}
+.button--light {
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  opacity: 0.25;
 }
 
 /*# sourceMappingURL=sunnyday.css.map */
