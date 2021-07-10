@@ -411,18 +411,57 @@ a:hover {
   cursor: pointer;
 }
 .button--light {
-  background: #FFFFFF;
-  color: #FFFFFF;
+  background: white;
 }
 .button--light:hover {
   background: rgba(255, 255, 255, 0.25);
 }
+.button--light {
+  color: white;
+}
+.button--primary {
+  background: #fe7867;
+}
+.button--primary:hover {
+  background: rgba(254, 120, 103, 0.25);
+}
 .button--secondary {
   background: #fad400;
-  color: #23303e;
 }
 .button--secondary:hover {
   background: rgba(250, 212, 0, 0.25);
+}
+.button--sucess {
+  background: #00cc03;
+}
+.button--sucess:hover {
+  background: rgba(0, 204, 3, 0.25);
+}
+.button--danger {
+  background: #f00400;
+}
+.button--danger:hover {
+  background: rgba(240, 4, 0, 0.25);
+}
+.button--warming {
+  background: #faf200;
+}
+.button--warming:hover {
+  background: rgba(250, 242, 0, 0.25);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  min-height: 100vh;
+  padding: 1.7778rem 1.3333rem;
+  background: url("../../../images/mobile/image-header.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=sunnyday.css.map */
