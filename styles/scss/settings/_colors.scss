@@ -8,13 +8,14 @@ $_very-dark-desaturated-blue: hsl(212, 27%, 19%);
 $_very-dark-grayish-blue: hsl(213, 9%, 39%);
 $_dark-grayish-blue: hsl(232, 10%, 55%);
 $_grayish-blue: hsl(210, 4%, 67%);
+$_creme: hsl(34, 100%, 99%);
 $_white: hsl(210, 4%, 67%);
 
 // UI Colors
 $primary-color: $_soft-red;
 $secondary-color: $_yellow;
 
-$bg-color: $_white;
+$bg-color: $_creme;
 $gd-text-color: $_dark-saturate-cyan;
 $photo-text-color: $_dark-blue;
 $bg-footer: $_dark-moderate-cyan;

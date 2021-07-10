@@ -1,0 +1,11 @@
+@use "../settings/layout";
+
+.container {
+    max-width: layout.$ct-res-width;
+    margin: 0 auto;
+    padding: 0 layout.$ct-min-padding;
+
+    @media  screen and (min-wdith: layout.$md-bp) {
+        max-width: layout.$ct-max-width;
+    }
+}
