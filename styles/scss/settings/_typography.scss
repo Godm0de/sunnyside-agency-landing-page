@@ -1,0 +1,22 @@
+@use "sass:math";
+
+// Font family
+$font-barlow: "Barlow", sans-serif;
+$font-fraunces: "Fraunce", serif;
+
+// Font sizes
+$_fs-base: 18;
+
+$_fs-40: math.div($_fs-base, 40) + rem;
+$_fs-32: math.div($_fs-base, 32) + rem;
+$_fs-28: math.div($_fs-base, 28) + rem;
+$_fs-18: math.div($_fs-base, 18) + rem;
+$_fs-16: math.div($_fs-base, 16) + rem;
+$_fs-15: math.div($_fs-base, 15) + rem;
+$_fs-14: math.div($_fs-base, 14) + rem;
+
+$fs-size: $_fs-base + px;
+
+$fs-nav: $_fs-18;
+$fs-button: $_fs-15;
+$fs-res-menu: $_fs-20;
