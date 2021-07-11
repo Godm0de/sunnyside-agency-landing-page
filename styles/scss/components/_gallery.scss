@@ -1,6 +1,6 @@
 .gallery{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(clamp(100%/(4 + 1) + 0.1%,(376px - 100vw)*1000,100%/(2 + 1) + 0.1%),1fr));
     margin-top: 86px;
 
     .gallery__image{

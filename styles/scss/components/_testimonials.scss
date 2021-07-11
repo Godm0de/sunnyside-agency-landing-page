@@ -2,16 +2,18 @@
 @use "../settings/colors";
 
 .testimonials{
-    display: flex;
-    flex-direction: column;
-    gap: 3.5556rem;
-
     &__title{
         text-align: center;
         font-family: typography.$font-fraunces;
         line-height: 19.73px;
         letter-spacing: 4px;
         color: colors.$testimonial-title-color;
+    }
+
+    &__items{
+        display: grid;
+        grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+        gap: 3.5556rem;
     }
 
     &__avatar{

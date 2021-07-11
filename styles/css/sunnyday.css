@@ -595,7 +595,7 @@ a, a:link, a:visited, a:active {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(4 + 1) + 0.1%,(376px - 100vw)*1000,100%/(2 + 1) + 0.1%), 1fr));
   margin-top: 86px;
 }
 .gallery .gallery__image {
@@ -668,17 +668,17 @@ a, a:link, a:visited, a:active {
   height: auto;
 }
 
-.testimonials {
-  display: flex;
-  flex-direction: column;
-  gap: 3.5556rem;
-}
 .testimonials__title {
   text-align: center;
   font-family: "Fraunces", serif;
   line-height: 19.73px;
   letter-spacing: 4px;
   color: #a7abae;
+}
+.testimonials__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3.5556rem;
 }
 .testimonials__avatar {
   width: 72px;
