@@ -1,5 +1,36 @@
 @use "../settings/colors";
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     background: colors.$bg-footer;
+    padding: 64px 39px 80px 39px;
+
+    &__logo {
+        filter:invert(61%) sepia(57%) saturate(482%) hue-rotate(125deg);
+    }
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 57px;
+        margin-top: 40px;
+    }
+
+    &__link {
+        color: colors.$ft-text-color;
+
+        &:hover {
+            color: colors.$light-color;
+        }
+    }
+
+    .social {
+        margin-top: 88px;
+    }
 }
+

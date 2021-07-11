@@ -9,6 +9,7 @@ $_very-dark-grayish-blue: hsl(213, 9%, 39%);
 $_dark-grayish-blue: hsl(232, 10%, 55%);
 $_grayish-blue: hsl(210, 4%, 67%);
 $_white: hsl(210, 4%, 67%);
+$_moderate-cyan: hsl(168,44%,70%);
 
 // Added colors
 $_creme: hsl(34, 100%, 99%);
@@ -37,9 +38,10 @@ $color-theme: (
 // UI Colors
 $bg-color: $_creme;
 $gd-text-color: $_dark-saturate-cyan;
-$ft-text-color: $_dark-grayish-blue;
+$ft-text-color: $_dark-moderate-cyan;
 $photo-text-color: $_dark-blue;
 $btn-text-color: $_very-dark-desaturated-blue;
-$bg-footer: $_dark-moderate-cyan;
+$bg-footer: $_moderate-cyan;
 $testimonial-title-color: $_grayish-blue;
 $testimonial-text-color: $_very-dark-grayish-blue;
+$mobile-menu-text-color: $_dark-grayish-blue;

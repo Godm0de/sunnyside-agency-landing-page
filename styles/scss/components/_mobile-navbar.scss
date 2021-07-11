@@ -29,6 +29,11 @@
         margin-bottom: 1.7778rem;
     }
 
+    &__link {
+        color: colors.$mobile-menu-text-color;
+    }
+
+
     &::before{
         content: '';
         position: absolute;

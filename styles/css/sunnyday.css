@@ -483,6 +483,9 @@ a, a:link, a:visited, a:active {
 .mobile-navbar__item {
   margin-bottom: 1.7778rem;
 }
+.mobile-navbar__link {
+  color: #818498;
+}
 .mobile-navbar::before {
   content: "";
   position: absolute;
@@ -519,7 +522,7 @@ a, a:link, a:visited, a:active {
   line-height: 30px;
   text-align: center;
   font-weight: 600;
-  color: #818498;
+  color: #458c7e;
 }
 .article__link {
   position: relative;
@@ -587,6 +590,18 @@ a, a:link, a:visited, a:active {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+.social__icon {
+  display: block;
+}
+.social__link:hover .social__icon {
+  filter: brightness(10);
 }
 
 .header {
@@ -671,7 +686,31 @@ a, a:link, a:visited, a:active {
 }
 
 .footer {
-  background: #458c7e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #91d4c7;
+  padding: 64px 39px 80px 39px;
+}
+.footer__logo {
+  filter: invert(61%) sepia(57%) saturate(482%) hue-rotate(125deg);
+}
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 57px;
+  margin-top: 40px;
+}
+.footer__link {
+  color: #458c7e;
+}
+.footer__link:hover {
+  color: white;
+}
+.footer .social {
+  margin-top: 88px;
 }
 
 /*# sourceMappingURL=sunnyday.css.map */

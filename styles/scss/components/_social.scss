@@ -1,6 +1,13 @@
 .social {
-    
-    &__icon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
 
+    &__icon{
+        display: block;
+    }
+
+    &__link:hover &__icon{
+        filter: brightness(10);
     }
 }
