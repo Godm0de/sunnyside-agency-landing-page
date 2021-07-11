@@ -578,6 +578,17 @@ a, a:link, a:visited, a:active {
   line-height: 27px;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 86px;
+}
+.gallery .gallery__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .header {
   min-height: 100vh;
   padding: 1.7778rem 1.3333rem;
@@ -657,6 +668,10 @@ a, a:link, a:visited, a:active {
 .testimonials__range {
   margin: 9px 0 0 0;
   color: #a7abae;
+}
+
+.footer {
+  background: #458c7e;
 }
 
 /*# sourceMappingURL=sunnyday.css.map */
