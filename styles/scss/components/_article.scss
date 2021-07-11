@@ -1,0 +1,65 @@
+@use "../settings/typography";
+@use "../settings/colors"; // To change in generic
+
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px 0;
+
+    &__title{
+        margin: 0 0 24px 0;
+        font: 32px; // To remove and configure fonts in px
+
+        font-family: typography.$font-fraunces;
+        font-weight: 900;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    &__text{
+        margin: 0 0 32px 0;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 600;
+        color: colors.$ft-text-color;
+    }
+
+    &__link {
+        position: relative;
+        color: colors.$btn-text-color;
+        font-family: typography.$font-fraunces;
+        font-size: typography.$fs-link;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -27%;
+            left: -10%;
+            right: 0;
+            opacity: 0.25;
+            display: block;
+            height: 10px;
+            min-width: 120%;
+            border-radius: 28px;
+            background: colors.$btn-text-color;
+            transition: opacity 0.15s linear; //To do, globalize in settings
+        }
+
+        &--primary {
+            &::after { 
+                background: colors.$primary-color;
+            }
+        }
+
+        &--secondary {
+            &::after { 
+                background: colors.$secondary-color;
+            }
+        }
+    }
+
+    &__link:hover::after{
+        opacity: 1;
+    }
+}

@@ -1,10 +1,5 @@
 @use "../settings/colors";
 
 a, a:link, a:visited, a:active {
-    color: colors.$gd-text-color;
     text-decoration: none;
-}
-
-a:hover {
-    color: colors.$photo-text-color;
 }

@@ -382,12 +382,7 @@ body {
 }
 
 a, a:link, a:visited, a:active {
-  color: #25564b;
   text-decoration: none;
-}
-
-a:hover {
-  color: #19536b;
 }
 
 .container {
@@ -505,6 +500,82 @@ a:hover {
   transform: translateY(0);
 }
 
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 64px 0;
+}
+.article__title {
+  margin: 0 0 24px 0;
+  font: 32px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  line-height: 39px;
+  text-align: center;
+}
+.article__text {
+  margin: 0 0 32px 0;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #818498;
+}
+.article__link {
+  position: relative;
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-size: 0.8333333333rem;
+}
+.article__link::after {
+  content: "";
+  position: absolute;
+  bottom: -27%;
+  left: -10%;
+  right: 0;
+  opacity: 0.25;
+  display: block;
+  height: 10px;
+  min-width: 120%;
+  border-radius: 28px;
+  background: #23303e;
+  transition: opacity 0.15s linear;
+}
+.article__link--primary::after {
+  background: #fe7867;
+}
+.article__link--secondary::after {
+  background: #fad400;
+}
+.article__link:hover::after {
+  opacity: 1;
+}
+
+.card {
+  position: relative;
+}
+.card__image {
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+  object-fit: cover;
+}
+.card__article {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 59px;
+  text-align: center;
+  color: #25564b;
+}
+.card__title {
+  font-family: "Fraunces", serif;
+  color: #25564b;
+  margin: 0 0 27px 0;
+}
+.card__text {
+  margin: 0;
+}
+
 .header {
   min-height: 100vh;
   padding: 1.7778rem 1.3333rem;
@@ -542,6 +613,10 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.features__image {
+  max-width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=sunnyday.css.map */
