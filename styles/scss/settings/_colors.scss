@@ -11,6 +11,9 @@ $_grayish-blue: hsl(210, 4%, 67%);
 $_white: hsl(210, 4%, 67%);
 $_moderate-cyan: hsl(168,44%,70%);
 
+$_dark-moderate-blue:hsl(197,84%,13%);
+$_dark-blue: hsl(198, 62%, 26%);
+
 // Added colors
 $_creme: hsl(34, 100%, 99%);
 $_white2: hsl(255, 100%, 100%);
@@ -36,12 +39,28 @@ $color-theme: (
 );
 
 // UI Colors
-$bg-color: $_creme;
-$gd-text-color: $_dark-saturate-cyan;
-$ft-text-color: $_dark-moderate-cyan;
-$photo-text-color: $_dark-blue;
+$body-bg-color: $_creme;
+$param-text-color: $_dark-grayish-blue;
+$title-text-color: $_very-dark-desaturated-blue;
 $btn-text-color: $_very-dark-desaturated-blue;
-$bg-footer: $_moderate-cyan;
+
+$footer-bg-color: $_moderate-cyan;
+$footer-text-color:  $_dark-moderate-cyan;
+
+$mobile-menu-bg-color: $_creme;
+$mobile-menu-text-color: $_dark-grayish-blue;
+
 $testimonial-title-color: $_grayish-blue;
 $testimonial-text-color: $_very-dark-grayish-blue;
-$mobile-menu-text-color: $_dark-grayish-blue;
+
+$btn-text-color: $_very-dark-desaturated-blue;
+
+$gd-text-color: $_dark-saturate-cyan;
+$ft-text-color: $_dark-moderate-cyan;
+
+$photo-title-color: $_dark-saturate-cyan;
+$photo-text-color: $_dark-blue;
+$graphic-text-color: $_dark-saturate-cyan;
+
+// Transition into colors
+$opacity-transition: 0.3s linear;

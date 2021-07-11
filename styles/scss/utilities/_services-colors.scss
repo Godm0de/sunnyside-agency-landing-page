@@ -1,0 +1,13 @@
+@use "../settings/colors";
+
+.photo-title-color {
+    color: colors.$photo-title-color !important;
+}
+
+.photo-text-color {
+    color: colors.$photo-text-color !important;
+}
+
+.graphic-text-color {
+    color: colors.$graphic-text-color !important;
+}

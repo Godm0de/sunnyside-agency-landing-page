@@ -349,6 +349,13 @@ template {
 .h6 {
   font-weight: 700;
   line-height: 0.3673469388rem;
+  font-family: "Fraunces", serif;
+  color: #23303e;
+}
+
+p, a, span, li {
+  color: #818498;
+  font-family: "Barlow", sans-serif;
 }
 
 .h1 {
@@ -377,7 +384,6 @@ template {
 
 body {
   font-size: 18px;
-  font-family: "Barlow", sans-serif;
   background-color: #fffdfa;
 }
 
@@ -406,6 +412,7 @@ a, a:link, a:visited, a:active {
   cursor: pointer;
 }
 .button--light {
+  color: white;
   background: white;
   transition: background 0.3s linear;
 }
@@ -485,6 +492,11 @@ a, a:link, a:visited, a:active {
 }
 .mobile-navbar__link {
   color: #818498;
+  opacity: 0.8;
+  transition: opacity 0.3s linear;
+}
+.mobile-navbar__link:hover {
+  opacity: 1;
 }
 .mobile-navbar::before {
   content: "";
@@ -522,13 +534,14 @@ a, a:link, a:visited, a:active {
   line-height: 30px;
   text-align: center;
   font-weight: 600;
-  color: #458c7e;
+  color: #818498;
 }
 .article__link {
   position: relative;
   color: #23303e;
   font-family: "Fraunces", serif;
   font-size: 0.8333333333rem;
+  font-weight: 700;
 }
 .article__link::after {
   content: "";
@@ -541,8 +554,9 @@ a, a:link, a:visited, a:active {
   height: 10px;
   min-width: 120%;
   border-radius: 28px;
+  z-index: -1;
   background: #23303e;
-  transition: opacity 0.15s linear;
+  transition: opacity 0.3s linear;
 }
 .article__link--primary::after {
   background: #fe7867;
@@ -551,7 +565,7 @@ a, a:link, a:visited, a:active {
   background: #fad400;
 }
 .article__link:hover::after {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .card {
@@ -569,11 +583,9 @@ a, a:link, a:visited, a:active {
   bottom: 0;
   margin-bottom: 59px;
   text-align: center;
-  color: #25564b;
 }
 .card__title {
   font-family: "Fraunces", serif;
-  color: #25564b;
   margin: 0 0 27px 0;
 }
 .card__text {
@@ -601,9 +613,17 @@ a, a:link, a:visited, a:active {
   display: block;
 }
 .social__link:hover .social__icon {
-  filter: brightness(10);
+  animation: bright 1s linear;
 }
 
+@keyframes bright {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(10);
+  }
+}
 .header {
   min-height: 100vh;
   padding: 1.7778rem 1.3333rem;
@@ -700,17 +720,30 @@ a, a:link, a:visited, a:active {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 57px;
+  gap: 56px;
   margin-top: 40px;
 }
 .footer__link {
   color: #458c7e;
+  transition: color 0.3s linear;
 }
 .footer__link:hover {
   color: white;
 }
 .footer .social {
   margin-top: 88px;
+}
+
+.photo-title-color {
+  color: #25564b !important;
+}
+
+.photo-text-color {
+  color: #19536b !important;
+}
+
+.graphic-text-color {
+  color: #25564b !important;
 }
 
 /*# sourceMappingURL=sunnyday.css.map */

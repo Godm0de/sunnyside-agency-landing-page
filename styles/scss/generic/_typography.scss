@@ -1,4 +1,5 @@
 @use "../settings/typography";
+@use "../settings/colors";
 
 // Heading font-weight
 .h1,
@@ -9,10 +10,16 @@
 .h6 {
     font-weight: 700;
     line-height: typography.$fs-line-headings;
+    font-family: typography.$font-fraunces;
+    color: colors.$title-text-color;
+}
+
+p, a, span, li {
+    color: colors.$param-text-color;
+    font-family: typography.$font-barlow;
 }
 
 // Heading size and line-heading
-
 @each $heading, $value in typography.$headings-sizes{
     .#{$heading}{
         font-size: #{$value};

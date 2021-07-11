@@ -1,3 +1,5 @@
+@use "../settings/colors";
+
 .social {
     display: flex;
     flex-wrap: wrap;
@@ -5,9 +7,19 @@
 
     &__icon{
         display: block;
+        
     }
 
     &__link:hover &__icon{
+        animation: bright 1s linear;
+    }
+}
+
+@keyframes bright {
+    from {
+        filter: brightness(1);
+    }
+    to {
         filter: brightness(10);
     }
 }

@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
 
-    background: colors.$bg-footer;
+    background: colors.$footer-bg-color;
     padding: 64px 39px 80px 39px;
 
     &__logo {
@@ -17,12 +17,13 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 57px;
+        gap: 56px;
         margin-top: 40px;
     }
 
     &__link {
-        color: colors.$ft-text-color;
+        color: colors.$footer-text-color;
+        transition: color colors.$opacity-transition;
 
         &:hover {
             color: colors.$light-color;

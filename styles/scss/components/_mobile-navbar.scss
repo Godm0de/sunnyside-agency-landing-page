@@ -12,7 +12,7 @@
     padding: 1.7778rem 0;
     margin-top: 2.7778rem;
 
-    background: colors.$bg-color;
+    background: colors.$mobile-menu-bg-color;
     transition: transform 0.3s linear;
 
     transform: translateY(-10%);
@@ -31,6 +31,12 @@
 
     &__link {
         color: colors.$mobile-menu-text-color;
+        opacity: 0.8;
+        transition: opacity colors.$opacity-transition;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 
 
@@ -41,7 +47,7 @@
         right: 0;
         width: 0;
         height: 0;
-        border-bottom: 1.3889rem solid colors.$bg-color;
+        border-bottom: 1.3889rem solid colors.$mobile-menu-bg-color;
         border-left: 1.3889rem solid transparent;
     }
 }
