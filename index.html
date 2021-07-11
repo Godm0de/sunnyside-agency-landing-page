@@ -18,24 +18,23 @@
   <header class="header">
     <section class="navbar">
       <img src="./images/logo.svg" alt="Sunnyside logo" class="navbar__logo">
-      <a href="" class="navbar__toggle"><img src="./images/icon-hamburger.svg" alt=""></a>
+      <button class="navbar__toggle" id="toggle"><img src="./images/icon-hamburger.svg" alt=""></button>
     </section>
 
-    <section class="mobile-navbar toggle">
-      <div class="modal-navbar">
-        <nav class="modal-navbar__nav"">
-          <ul class="modal-navbar__list">
-            <li class="modal-navbar__item"><a href="" class="modal-navbar__link">About</a></li>
-            <li class="modal-navbar__item"><a href="" class="modal-navbar__link">Services</a></li>
-            <li class="modal-navbar__item"><a href="" class="modal-navbar__link">Projects</a></li>
+    <section class="mobile-navbar" id="mobile-navbar">
+        <nav class="mobile-navbar__nav"">
+          <ul class="mobile-navbar__list">
+            <li class="mobile-navbar__item"><a href="" class="mobile-navbar__link">About</a></li>
+            <li class="mobile-navbar__item"><a href="" class="mobile-navbar__link">Services</a></li>
+            <li class="mobile-navbar__item"><a href="" class="mobile-navbar__link">Projects</a></li>
           </ul>
         </nav>
         <button class="button button--secondary">CONTACT</button>
-      </div>
     </section>
 
     <section class="hero">
-
+      <h1 class="hero__title">WE ARE CREATIVE</h1>
+      <img src="./images/icon-arrow-down.svg" class="hero__arrow" alt="">
     </section>
   </header>
 
@@ -53,5 +52,11 @@
 
     <!--social-->
   </footer>
+
+  <script>
+    document.getElementById("toggle").addEventListener("click", ()=>{
+      document.getElementById("mobile-navbar").classList.toggle("toggle");
+    })
+  </script>
 </body>
 </html>

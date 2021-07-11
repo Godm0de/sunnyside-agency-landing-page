@@ -16,14 +16,9 @@
         &--#{$name} {
             background: $color;
             
+            transition: background 0.3s linear;
             &:hover {
                 background: rgba($color, 0.25);
-            }
-        }
-
-        @if ($name == "light") {
-            &--#{$name} {
-                color: $color
             }
         }
     }
