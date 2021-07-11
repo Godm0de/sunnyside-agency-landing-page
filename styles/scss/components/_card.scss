@@ -5,6 +5,7 @@
     position: relative;
 
     &__image{
+        display: block;
         width: 100%;
         height: auto;
         min-height: 600px;
@@ -29,6 +30,6 @@
 
     &__text{
         margin: 0;
+        line-height: 27px;
     }
-
 }
