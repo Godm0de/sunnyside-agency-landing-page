@@ -10,11 +10,15 @@
     &__title {
         font-family: typography.$font-fraunces;
         color: colors.$light-color;
-        font-size: typography.$fs-hero;
+        font-size: typography.$fs-title-mobile-hero;
         text-align: center;
         line-height: 49px;
         font-weight: 900;
         letter-spacing: 6.25px;
+
+        @media screen and (min-width: 728px) {
+            font-size: typography.$fs-title-hero;
+        }
     }
 
     &__arrow{

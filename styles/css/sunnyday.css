@@ -680,6 +680,11 @@ a, a:link, a:visited, a:active {
   font-weight: 900;
   letter-spacing: 6.25px;
 }
+@media screen and (min-width: 728px) {
+  .hero__title {
+    font-size: 3.1111111111rem;
+  }
+}
 .hero__arrow {
   margin: 52px 0 0 0;
   animation: slide 0.5s linear;
