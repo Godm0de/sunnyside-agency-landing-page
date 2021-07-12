@@ -658,6 +658,7 @@ a, a:link, a:visited, a:active {
 }
 @media screen and (min-width: 768px) {
   .header {
+    min-height: 800px;
     background: url("../../../images/desktop/image-header.jpg");
     background-position: bottom;
     background-size: cover;
