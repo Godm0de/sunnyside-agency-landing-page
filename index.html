@@ -21,7 +21,15 @@
   <header class="header">
     <section class="navbar">
       <img src="./images/logo.svg" alt="Sunnyside logo" class="navbar__logo">
-      <button class="navbar__toggle" id="toggle"><img src="./images/icon-hamburger.svg" alt=""></button>
+      <nav class="navbar__nav">
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="" class="navbar__link">About</a></li>
+          <li class="navbar__item"><a href="" class="navbar__link">Services</a></li>
+          <li class="navbar__item"><a href="" class="navbar__link">Projects</a></li>
+        </ul>
+      </nav>
+      <button class="button button--light">CONTACT</button>
+      <button class="navbar__toggle hide-md" id="toggle"><img src="./images/icon-hamburger.svg" alt=""></button>
     </section>
 
     <section class="mobile-navbar" id="mobile-navbar">
@@ -44,16 +52,16 @@
   <main>
     <!-- Features -->
     <section class="features">
-      <picture class="features__item">
-        <source srcset="./images/mobile/image-transform.jpg" media=(min-width: 375px)>
-        <img src="./images/desktop/image-transform.jpg" class="features__image" alt="">
-      </picture>
-
       <article class="features__item article container">
         <h2 class="article__title">Transform your brand</h2>
         <p class="article__text">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
         <a href="" class="article__link article__link--secondary">LEARN MORE</a>
       </article>
+      
+      <picture class="features__item">
+        <source srcset="./images/mobile/image-transform.jpg" media=(min-width: 375px)>
+        <img src="./images/desktop/image-transform.jpg" class="features__image" alt="">
+      </picture>
 
       <picture class="features__item">
         <source srcset="./images/mobile/image-stand-out.jpg" media=(min-width: 375px)>
@@ -90,36 +98,45 @@
     <section class="testimonials container">
       <h5 class="testimonials__title">CLIENT TESTIMONIALS</h5>
 
-      <div class="testimonials_items">
+      <div class="testimonials__items">
         <div class="testimonials__item">
           <img src="./images/image-emily.jpg" class="testimonials__avatar" alt="Emily profile picture">
           <p class="testimonials__text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-          <h3 class="testimonials__name">Emily R.</h3>
-          <p class="testimonials__range">Marketing Director</p>
+
+          <div class="testimonials__info">
+            <h3 class="testimonials__name">Emily R.</h3>
+            <p class="testimonials__range">Marketing Director</p>
+          </div>
         </div>
   
         <div class="testimonials__item">
           <img src="./images/image-thomas.jpg" class="testimonials__avatar" alt="Emily profile picture">
           <p class="testimonials__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-          <h3 class="testimonials__name">Thomas S.</h3>
-          <p class="testimonials__range">Chief Operating Officer</p>
+
+          <div class="testimonials__info">
+            <h3 class="testimonials__name">Thomas S.</h3>
+            <p class="testimonials__range">Chief Operating Officer</p>
+          </div>
         </div>
   
         <div class="testimonials__item">
           <img src="./images/image-jennie.jpg" class="testimonials__avatar" alt="Emily profile picture">
           <p class="testimonials__text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-          <h3 class="testimonials__name">Jennie F.</h3>
-          <p class="testimonials__range">Business Owner</p>
+
+          <div class="testimonials__info">
+            <h3 class="testimonials__name">Jennie F.</h3>
+            <p class="testimonials__range">Business Owner</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Gallery -->
     <section class="gallery">
-      <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="" class="gallery__image">
-      <img src="./images/mobile/image-gallery-orange.jpg" alt="" class="gallery__image">
-      <img src="./images/mobile/image-gallery-cone.jpg" alt="" class="gallery__image">
-      <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="" class="gallery__image">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="gallery__image">
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="" class="gallery__image">
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="" class="gallery__image">
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" class="gallery__image">
     </section>
   </main>
 

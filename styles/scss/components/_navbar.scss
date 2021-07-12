@@ -8,6 +8,18 @@
         border: none;
 
         cursor: pointer;
-        
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline;
+        margin-right: 47px;
+    }
+
+    &__nav {
+        margin-left: auto;
     }
 }

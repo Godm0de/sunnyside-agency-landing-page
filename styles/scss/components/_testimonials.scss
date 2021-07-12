@@ -2,6 +2,8 @@
 @use "../settings/colors";
 
 .testimonials{
+    margin: 160px 0;
+
     &__title{
         text-align: center;
         font-family: typography.$font-fraunces;
@@ -12,8 +14,9 @@
 
     &__items{
         display: grid;
-        grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+        grid-template-columns:repeat(auto-fit,minmax(min(100%,350px),1fr));
         gap: 3.5556rem;
+        margin-top: 81px;
     }
 
     &__avatar{
@@ -26,6 +29,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+    }
+
+    &__info {
+        text-align: center;
+        margin-top: 37px;
     }
 
     &__text{

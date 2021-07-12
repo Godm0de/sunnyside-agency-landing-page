@@ -1,0 +1,14 @@
+@use "../settings/breakpoints";
+@use "../tools/media-screen" as mixin;
+
+@each $bp, $value in breakpoints.$breakpoints{
+    @include mixin.media-screen ($value){
+        .hide-#{$bp} {
+            display: none;
+        }
+
+        .show-#{$bp} {
+            display: block;
+        }
+    }
+}

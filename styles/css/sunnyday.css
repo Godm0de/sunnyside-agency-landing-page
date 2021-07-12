@@ -412,14 +412,16 @@ a, a:link, a:visited, a:active {
   cursor: pointer;
 }
 .button--light {
-  color: white;
+  color: #23303e;
   background: white;
   transition: background 0.3s linear;
 }
 .button--light:hover {
+  color: white;
   background: rgba(255, 255, 255, 0.25);
 }
 .button--primary {
+  color: #23303e;
   background: #fe7867;
   transition: background 0.3s linear;
 }
@@ -427,6 +429,7 @@ a, a:link, a:visited, a:active {
   background: rgba(254, 120, 103, 0.25);
 }
 .button--secondary {
+  color: #23303e;
   background: #fad400;
   transition: background 0.3s linear;
 }
@@ -434,6 +437,7 @@ a, a:link, a:visited, a:active {
   background: rgba(250, 212, 0, 0.25);
 }
 .button--sucess {
+  color: #23303e;
   background: #00cc03;
   transition: background 0.3s linear;
 }
@@ -441,6 +445,7 @@ a, a:link, a:visited, a:active {
   background: rgba(0, 204, 3, 0.25);
 }
 .button--danger {
+  color: #23303e;
   background: #f00400;
   transition: background 0.3s linear;
 }
@@ -448,6 +453,7 @@ a, a:link, a:visited, a:active {
   background: rgba(240, 4, 0, 0.25);
 }
 .button--warming {
+  color: #23303e;
   background: #faf200;
   transition: background 0.3s linear;
 }
@@ -464,6 +470,16 @@ a, a:link, a:visited, a:active {
   background: none;
   border: none;
   cursor: pointer;
+}
+.navbar__list {
+  list-style: none;
+}
+.navbar__item {
+  display: inline;
+  margin-right: 47px;
+}
+.navbar__nav {
+  margin-left: auto;
 }
 
 .mobile-navbar {
@@ -581,7 +597,9 @@ a, a:link, a:visited, a:active {
 .card__article {
   position: absolute;
   bottom: 0;
-  margin-bottom: 59px;
+  left: 0;
+  right: 0;
+  margin: 0 auto 59px auto;
   text-align: center;
 }
 .card__title {
@@ -631,6 +649,13 @@ a, a:link, a:visited, a:active {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    background: url("../../../images/desktop/image-header.jpg");
+    background-position: bottom;
+    background-size: cover;
+  }
+}
 
 .hero {
   display: flex;
@@ -662,12 +687,31 @@ a, a:link, a:visited, a:active {
     transform: translateY(0);
   }
 }
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(2 + 1) + 0.1%, (728px - 100vw)*1000, 100%), 1fr));
+}
 .features__image {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.features__item:nth-child(2) {
+  grid-row: 1;
+}
+.features .article {
+  align-self: center;
+}
+@media screen and (min-width: 728px) {
+  .features__item:nth-child(2) {
+    grid-column: 2;
+  }
 }
 
+.testimonials {
+  margin: 160px 0;
+}
 .testimonials__title {
   text-align: center;
   font-family: "Fraunces", serif;
@@ -677,8 +721,9 @@ a, a:link, a:visited, a:active {
 }
 .testimonials__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   gap: 3.5556rem;
+  margin-top: 81px;
 }
 .testimonials__avatar {
   width: 72px;
@@ -689,6 +734,10 @@ a, a:link, a:visited, a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.testimonials__info {
+  text-align: center;
+  margin-top: 37px;
 }
 .testimonials__text {
   text-align: center;
@@ -703,6 +752,14 @@ a, a:link, a:visited, a:active {
 .testimonials__range {
   margin: 9px 0 0 0;
   color: #a7abae;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services .card {
+  flex: max(375px, 100% / 2);
 }
 
 .footer {
@@ -744,6 +801,60 @@ a, a:link, a:visited, a:active {
 
 .graphic-text-color {
   color: #25564b !important;
+}
+
+.hide-xs {
+  display: none;
+}
+
+.show-xs {
+  display: block;
+}
+
+@media screen and (min-width: 576px) {
+  .hide-sm {
+    display: none;
+  }
+
+  .show-sm {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hide-md {
+    display: none;
+  }
+
+  .show-md {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hide-lg {
+    display: none;
+  }
+
+  .show-lg {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hide-xl {
+    display: none;
+  }
+
+  .show-xl {
+    display: block;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hide-xxl {
+    display: none;
+  }
+
+  .show-xxl {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=sunnyday.css.map */

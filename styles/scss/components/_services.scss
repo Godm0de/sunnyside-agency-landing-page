@@ -1,0 +1,8 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+        flex:max(375px, 100%/2);
+    }
+}
