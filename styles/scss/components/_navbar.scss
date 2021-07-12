@@ -1,3 +1,5 @@
+@use "../settings/colors";
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -17,6 +19,15 @@
     &__item {
         display: inline;
         margin-right: 47px;
+    }
+
+    &__link {
+        color: colors.$light-color;
+        transition: color colors.$opacity-transition;
+
+        &:hover {
+            color: colors.$param-text-color;
+        }
     }
 
     &__nav {

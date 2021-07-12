@@ -478,6 +478,13 @@ a, a:link, a:visited, a:active {
   display: inline;
   margin-right: 47px;
 }
+.navbar__link {
+  color: white;
+  transition: color 0.3s linear;
+}
+.navbar__link:hover {
+  color: #818498;
+}
 .navbar__nav {
   margin-left: auto;
 }
