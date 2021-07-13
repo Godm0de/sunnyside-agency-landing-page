@@ -1,8 +1,40 @@
+@use "../settings/typography";
+
 .services {
     display: flex;
     flex-wrap: wrap;
 
-    .card {
-        flex:max(375px, 100%/2);
+    &__wrapper {
+        position: relative;
+        flex: max(375px, 100%/2);
+    }
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 600px;
+
+        object-fit: cover;
+    }
+
+    &__article {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto 59px auto;
+        text-align: center;
+        max-width: 47ch;
+        padding: 0 24px;
+    }
+
+    &__title {
+        font-family: typography.$font-fraunces;
+        margin: 0 0 27px 0;
+    }
+
+    &__text {
+        margin: 0;
+        line-height: 27px;
     }
 }

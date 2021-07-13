@@ -462,6 +462,39 @@ a, a:link, a:visited, a:active {
   background: rgba(250, 242, 0, 0.25);
 }
 
+.u-link {
+  position: relative;
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-size: 0.8333333333rem;
+  font-weight: 700;
+}
+.u-link::after {
+  content: "";
+  position: absolute;
+  bottom: -27%;
+  left: -10%;
+  right: 0;
+  opacity: 0.25;
+  display: block;
+  height: 10px;
+  min-width: 120%;
+  border-radius: 28px;
+  z-index: -1;
+  background: #23303e;
+  transition: opacity 0.3s linear;
+}
+.u-link--primary::after {
+  background: #fe7867;
+}
+.u-link--secondary::after {
+  background: #fad400;
+}
+
+.u-link:hover::after {
+  opacity: 1;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -537,88 +570,6 @@ a, a:link, a:visited, a:active {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
-}
-
-.article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 64px 0;
-}
-.article__title {
-  margin: 0 0 24px 0;
-  font: 32px;
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  line-height: 39px;
-  text-align: center;
-}
-.article__text {
-  margin: 0 0 32px 0;
-  line-height: 30px;
-  text-align: center;
-  font-weight: 600;
-  color: #818498;
-}
-.article__link {
-  position: relative;
-  color: #23303e;
-  font-family: "Fraunces", serif;
-  font-size: 0.8333333333rem;
-  font-weight: 700;
-}
-.article__link::after {
-  content: "";
-  position: absolute;
-  bottom: -27%;
-  left: -10%;
-  right: 0;
-  opacity: 0.25;
-  display: block;
-  height: 10px;
-  min-width: 120%;
-  border-radius: 28px;
-  z-index: -1;
-  background: #23303e;
-  transition: opacity 0.3s linear;
-}
-.article__link--primary::after {
-  background: #fe7867;
-}
-.article__link--secondary::after {
-  background: #fad400;
-}
-.article__link:hover::after {
-  opacity: 1;
-}
-
-.card {
-  position: relative;
-}
-.card__image {
-  display: block;
-  width: 100%;
-  height: auto;
-  min-height: 600px;
-  object-fit: cover;
-}
-.card__article {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto 59px auto;
-  text-align: center;
-  max-width: 47ch;
-  padding: 0 24px;
-}
-.card__title {
-  font-family: "Fraunces", serif;
-  margin: 0 0 27px 0;
-}
-.card__text {
-  margin: 0;
-  line-height: 27px;
 }
 
 .gallery {
@@ -705,7 +656,49 @@ a, a:link, a:visited, a:active {
 }
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(2 + 1) + 0.1%, (728px - 100vw)*1000, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(clamp(100%/ (2 + 1) + 0.1%, (728px - 100vw) * 1000, 100%), 1fr));
+}
+.features__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 64px 0;
+  padding: auto 24px;
+  align-self: center;
+}
+@media screen and (min-width: 728px) {
+  .features__article {
+    align-items: flex-start;
+    max-width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.features__title {
+  margin: 0 0 24px 0;
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  line-height: 39px;
+  text-align: center;
+}
+@media screen and (min-width: 728px) {
+  .features__title {
+    text-align: left;
+    font-size: 40px;
+  }
+}
+.features__text {
+  margin: 0 0 32px 0;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #818498;
+}
+@media screen and (min-width: 728px) {
+  .features__text {
+    text-align: left;
+  }
 }
 .features__image {
   display: block;
@@ -715,9 +708,6 @@ a, a:link, a:visited, a:active {
 }
 .features__item:nth-child(2) {
   grid-row: 1;
-}
-.features .article {
-  align-self: center;
 }
 @media screen and (min-width: 728px) {
   .features__item:nth-child(2) {
@@ -779,8 +769,34 @@ a, a:link, a:visited, a:active {
   display: flex;
   flex-wrap: wrap;
 }
-.services .card {
+.services__wrapper {
+  position: relative;
   flex: max(375px, 100% / 2);
+}
+.services__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+  object-fit: cover;
+}
+.services__article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 59px auto;
+  text-align: center;
+  max-width: 47ch;
+  padding: 0 24px;
+}
+.services__title {
+  font-family: "Fraunces", serif;
+  margin: 0 0 27px 0;
+}
+.services__text {
+  margin: 0;
+  line-height: 27px;
 }
 
 .footer {

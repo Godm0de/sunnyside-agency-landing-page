@@ -13,22 +13,22 @@
 
 // Components
 @use "./components/button";
+@use "./components/u-link";
+
 
 @use "./components/navbar";
 @use "./components/mobile-navbar";
-@use "./components/article";
-@use "./components/card";
 @use "./components/gallery";
 @use "./components/social";
+
 
 @use "./components/header";
 @use "./components/hero";
 @use "./components/features";
 @use "./components/testimonials";
-@use "./components/services";
+@use "./components/services"; 
 @use "./components/footer";
 
 //Utilities
-
-@use "./utilities/services-colors";
+@use "./utilities/colors";
 @use "./utilities/media";
