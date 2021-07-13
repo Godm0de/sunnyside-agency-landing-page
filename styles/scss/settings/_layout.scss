@@ -13,11 +13,11 @@ $lg-bp: 992px;
 $xl-bp: 1200px;
 $xxl-bp: 1400px;
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+$breakpoints: (
+  xs: $xs-bp,
+  sm: $sm-bp,
+  md: $md-bp,
+  lg: $lg-bp,
+  xl: $xl-bp,
+  xxl: $xxl-bp
 );

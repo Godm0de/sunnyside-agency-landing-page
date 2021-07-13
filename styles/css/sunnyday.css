@@ -392,13 +392,12 @@ a, a:link, a:visited, a:active {
 }
 
 .container {
-  max-width: 100vw;
-  margin: 0 auto;
-  padding: 0 1.3333rem;
+  width: 100%;
+  padding: 0 24px;
 }
-@media screen and (min-wdith: 768px) {
+@media screen and (min-wdith: 728px) {
   .container {
-    max-width: 77vw;
+    width: 77vw;
   }
 }
 
@@ -620,7 +619,7 @@ a, a:link, a:visited, a:active {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(4 + 1) + 0.1%,(376px - 100vw)*1000,100%/(2 + 1) + 0.1%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(4 + 1) + 0.1%,(768px - 100vw)*1000,100%/(2 + 1) + 0.1%), 1fr));
   margin-top: 86px;
 }
 .gallery .gallery__image {
@@ -731,12 +730,13 @@ a, a:link, a:visited, a:active {
   line-height: 19.73px;
   letter-spacing: 4px;
   color: #a7abae;
+  margin: 0;
 }
 .testimonials__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-  gap: 3.5556rem;
-  margin-top: 81px;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(3 + 1) + 0.1%,(728px - 100vw)*1000,100%), 1fr));
+  gap: 30px;
+  padding: 82px 0;
 }
 .testimonials__avatar {
   width: 72px;
@@ -746,7 +746,11 @@ a, a:link, a:visited, a:active {
 .testimonials__item {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
   align-items: center;
+  max-width: 350px;
+  justify-self: center;
 }
 .testimonials__info {
   text-align: center;
