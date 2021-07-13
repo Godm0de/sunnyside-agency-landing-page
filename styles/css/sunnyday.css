@@ -392,12 +392,14 @@ a, a:link, a:visited, a:active {
 }
 
 .container {
-  width: 100%;
-  padding: 0 24px;
+  max-width: 100vw;
+  padding: 0 1.3333rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media screen and (min-wdith: 728px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 77vw;
+    max-width: calc(77vw + (1.3333rem * (2)));
   }
 }
 
@@ -607,6 +609,8 @@ a, a:link, a:visited, a:active {
   right: 0;
   margin: 0 auto 59px auto;
   text-align: center;
+  max-width: 47ch;
+  padding: 0 24px;
 }
 .card__title {
   font-family: "Fraunces", serif;
@@ -651,14 +655,14 @@ a, a:link, a:visited, a:active {
 .header {
   min-height: 100vh;
   padding: 1.7778rem 1.3333rem;
-  background: url("../../../images/mobile/image-header.jpg");
+  background: url("../../images/mobile/image-header.jpg");
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .header {
     min-height: 800px;
-    background: url("../../../images/desktop/image-header.jpg");
+    background: url("../../images/desktop/image-header.jpg");
     background-position: bottom;
     background-size: cover;
   }
@@ -722,7 +726,7 @@ a, a:link, a:visited, a:active {
 }
 
 .testimonials {
-  margin: 160px 0;
+  margin: 180px auto;
 }
 .testimonials__title {
   text-align: center;

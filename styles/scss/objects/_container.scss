@@ -1,11 +1,12 @@
 @use "../settings/layout";
 
 .container {
-    width: 100%;
-    padding: 0 24px;
+    max-width: layout.$ct-res-width;
+    padding: 0 layout.$ct-min-padding;
+    margin-left: auto;
+    margin-right: auto;
 
-
-    @media  screen and (min-wdith: 728px) {
-        width: 77vw;
+    @media  screen and (min-width: layout.$md-bp) {
+        max-width: calc(#{layout.$ct-max-width} + (#{layout.$ct-min-padding} * (2)));
     }
 }
