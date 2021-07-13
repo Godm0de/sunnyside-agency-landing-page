@@ -1,0 +1,42 @@
+@use "../settings/typography";
+@use "../settings/colors";
+
+.u-link {
+    position: relative;
+    color: colors.$btn-text-color;
+    font-family: typography.$font-fraunces;
+    font-size: typography.$fs-link;
+    font-weight: 700;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -27%;
+        left: -10%;
+        right: 0;
+        opacity: 0.25;
+        display: block;
+        height: 10px;
+        min-width: 120%;
+        border-radius: 28px;
+        z-index: -1; 
+        background: colors.$btn-text-color;
+        transition: opacity colors.$opacity-transition; //To do, globalize in settings
+    }
+
+    &--primary {
+        &::after {
+            background: colors.$primary-color;
+        }
+    }
+
+    &--secondary {
+        &::after { 
+            background: colors.$secondary-color;
+        }
+    }
+}
+
+.u-link:hover::after{
+    opacity: 1;
+}
