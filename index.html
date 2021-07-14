@@ -76,7 +76,7 @@
     </section>
 
     <!-- Services -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__wrapper">
         <img src="./images/desktop/image-graphic-design.jpg" class="services__image" alt="">
         <article class="services__article">
@@ -145,9 +145,9 @@
     <img src="./images/logo.svg" class="footer__logo" alt="">
 
     <nav class="footer__nav">
-      <a href="" class="footer__link">About</a>
-      <a href="" class="footer__link">Services</a>
-      <a href="" class="footer__link">Projects</a>
+      <a href="#about" class="footer__link">About</a>
+      <a href="#services" class="footer__link">Services</a>
+      <a href="#projects" class="footer__link">Projects</a>
     </nav>
 
     <div class="social">
@@ -163,6 +163,15 @@
   <script>
     document.getElementById("toggle").addEventListener("click", ()=> {
       document.getElementById("mobile-menu").classList.toggle("toggle");
+      document.getElementById("toggle").classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+      if( document.getElementById("mobile-menu").classList.contains("toggle") &&  document.getElementById("toggle").classList.contains("active"))
+      if( !document.getElementById("toggle").contains(e.target) && !document.getElementById("mobile-menu").contains(e.target)){
+        document.getElementById("mobile-menu").classList.remove("toggle");
+        document.getElementById("toggle").classList.remove("active");
+      }
     });
   </script>
 </body>
