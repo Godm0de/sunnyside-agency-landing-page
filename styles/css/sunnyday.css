@@ -747,7 +747,7 @@ a, a:link, a:visited, a:active {
   height: 4rem;
   clip-path: circle();
 }
-.testimonials__item {
+.testimonials__card {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

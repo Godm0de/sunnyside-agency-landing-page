@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a solution to the Sunnyside agency landing page challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects."/>
+  <meta name="author" content="Godm0de" />
+  <meta name="og:image" content="paste-image.jpg"/>
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Styles -->
@@ -99,7 +104,7 @@
       <h5 class="testimonials__title">CLIENT TESTIMONIALS</h5>
 
       <div class="testimonials__wrapper">
-        <div class="testimonials__item">
+        <div class="testimonials__card">
           <img src="./images/image-emily.jpg" class="testimonials__avatar" alt="Emily profile picture">
           <p class="testimonials__text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
 
@@ -109,7 +114,7 @@
           </div>
         </div>
   
-        <div class="testimonials__item">
+        <div class="testimonials__card">
           <img src="./images/image-thomas.jpg" class="testimonials__avatar" alt="Emily profile picture">
           <p class="testimonials__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
 
@@ -119,7 +124,7 @@
           </div>
         </div>
   
-        <div class="testimonials__item">
+        <div class="testimonials__card">
           <img src="./images/image-jennie.jpg" class="testimonials__avatar" alt="Emily profile picture">
           <p class="testimonials__text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
 
@@ -159,20 +164,6 @@
 
     <!--social-->
   </footer>
-
-  <script>
-    document.getElementById("toggle").addEventListener("click", ()=> {
-      document.getElementById("mobile-menu").classList.toggle("toggle");
-      document.getElementById("toggle").classList.toggle("active");
-    });
-
-    document.addEventListener("click", (e) => {
-      if( document.getElementById("mobile-menu").classList.contains("toggle") &&  document.getElementById("toggle").classList.contains("active"))
-      if( !document.getElementById("toggle").contains(e.target) && !document.getElementById("mobile-menu").contains(e.target)){
-        document.getElementById("mobile-menu").classList.remove("toggle");
-        document.getElementById("toggle").classList.remove("active");
-      }
-    });
-  </script>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
