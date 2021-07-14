@@ -1,19 +1,24 @@
 @use "../settings/typography";
 @use "../settings/colors";
-
-.features {
+@use "../settings/layout";
+@use "../tools/media-screen" as mixin;
+.about {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(100%/ (2 + 1) + 0.1%, (728px - 100vw) * 1000, 100%), 1fr));
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(clamp(100%/ (2 + 1) + 0.1%, (#{layout.$md-bp} - 100vw) * 1000, 100%), 1fr)
+    );
 
     &__article {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 64px 0;
-        padding: auto 24px;
         align-self: center;
+        padding-left: #{layout.$ct-min-padding};
+        padding-right: #{layout.$ct-min-padding};
+        margin: 3.5556rem 0;
 
-        @media screen and (min-width: 728px) {
+        @include mixin.media-screen(layout.$md-bp) {
             align-items: flex-start;
             max-width: 30vw;
             margin-left: auto;
@@ -22,28 +27,28 @@
     }
 
     &__title {
-        margin: 0 0 24px 0;
-        font-size: 32px; // To remove and configure fonts in px
+        margin: 0 0 1.3333rem 0;
+        font-size: typography.$fs-title-mobile-about;
 
         font-family: typography.$font-fraunces;
         font-weight: 900;
-        line-height: 39px;
+        line-height: 2.1667rem;
         text-align: center;
 
-        @media screen and (min-width: 728px) {
+        @include mixin.media-screen(layout.$md-bp) {
             text-align: left;
-            font-size: 40px;
+            font-size: typography.$fs-title-about;
         }
     }
 
     &__text {
-        margin: 0 0 32px 0;
-        line-height: 30px;
+        margin: 0 0 1.7778rem 0;
+        line-height: 1.6667rem;
         text-align: center;
         font-weight: 600;
         color: colors.$param-text-color;
 
-        @media screen and (min-width: 728px) {
+        @include mixin.media-screen(layout.$md-bp) {
             text-align: left;
         }
     }
@@ -59,7 +64,7 @@
         grid-row: 1;
     }
 
-    @media screen and (min-width: 728px) {
+    @include mixin.media-screen(layout.$md-bp) {
         &__item:nth-child(2) {
             grid-column: 2;
         }

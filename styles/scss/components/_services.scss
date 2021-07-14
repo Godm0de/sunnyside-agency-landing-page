@@ -1,4 +1,6 @@
 @use "../settings/typography";
+@use "../settings/layout";
+@use "../tools/media-screen" as mixin;
 
 .services {
     display: flex;
@@ -6,13 +8,13 @@
 
     &__wrapper {
         position: relative;
-        flex: max(375px, 100%/2);
+        flex: max(375px, 50%);
     }
     &__image {
         display: block;
         width: 100%;
         height: auto;
-        min-height: 600px;
+        min-height: 33.3333rem;
 
         object-fit: cover;
     }
@@ -22,19 +24,23 @@
         bottom: 0;
         left: 0;
         right: 0;
-        margin: 0 auto 59px auto;
+        margin: 0 auto 3.2778rem auto;
         text-align: center;
-        max-width: 47ch;
-        padding: 0 24px;
+        max-width: 100%;
+        padding: 0 #{layout.$ct-min-padding};
+
+        @include mixin.media-screen(layout.$md-bp) {
+            max-width: 47ch;
+        }
     }
 
     &__title {
         font-family: typography.$font-fraunces;
-        margin: 0 0 27px 0;
+        margin: 0 0 1.5rem 0;
     }
 
     &__text {
         margin: 0;
-        line-height: 27px;
+        line-height: 1.5rem;
     }
 }

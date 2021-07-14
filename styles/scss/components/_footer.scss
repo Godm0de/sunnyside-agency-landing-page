@@ -6,10 +6,10 @@
     align-items: center;
 
     background: colors.$footer-bg-color;
-    padding: 64px 39px 80px 39px;
+    padding: 3.5556rem 2.1667rem 4.4444rem 2.1667rem;
 
     &__logo {
-        filter:invert(61%) sepia(57%) saturate(482%) hue-rotate(125deg);
+        filter: invert(36%) sepia(71%) saturate(351%) hue-rotate(118deg) brightness(50%) contrast(88%);
     }
 
     &__nav {
@@ -17,8 +17,8 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 56px;
-        margin-top: 40px;
+        gap: 3.1111rem;
+        margin-top: 2.2222rem;
     }
 
     &__link {
@@ -31,7 +31,6 @@
     }
 
     .social {
-        margin-top: 88px;
+        margin-top: 4.8889rem;
     }
 }
-

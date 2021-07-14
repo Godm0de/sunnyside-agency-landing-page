@@ -1,15 +1,21 @@
 @use "../settings/colors";
+@use "../settings/layout";
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &__toggle{
+    &__toggle {
         background: none;
         border: none;
-
+        opacity: 1;
+        transition: opacity colors.$opacity-transition;
         cursor: pointer;
+
+        &.active{
+            opacity: 0.5;
+        }
     }
 
     &__list {

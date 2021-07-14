@@ -23,21 +23,21 @@
       <img src="./images/logo.svg" alt="Sunnyside logo" class="navbar__logo">
       <nav class="navbar__nav hide-xs show-md">
         <ul class="navbar__list">
-          <li class="navbar__item"><a href="" class="navbar__link">About</a></li>
-          <li class="navbar__item"><a href="" class="navbar__link">Services</a></li>
-          <li class="navbar__item"><a href="" class="navbar__link">Projects</a></li>
+          <li class="navbar__item"><a href="#about" class="navbar__link">About</a></li>
+          <li class="navbar__item"><a href="#services" class="navbar__link">Services</a></li>
+          <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
         </ul>
       </nav>
       <button class="button button--light hide-xs show-md">CONTACT</button>
       <button class="navbar__toggle hide-md" id="toggle"><img src="./images/icon-hamburger.svg" alt=""></button>
     </section>
 
-    <section class="mobile-navbar" id="mobile-navbar">
-        <nav class="mobile-navbar__nav"">
-          <ul class="mobile-navbar__list">
-            <li class="mobile-navbar__item"><a href="" class="mobile-navbar__link">About</a></li>
-            <li class="mobile-navbar__item"><a href="" class="mobile-navbar__link">Services</a></li>
-            <li class="mobile-navbar__item"><a href="" class="mobile-navbar__link">Projects</a></li>
+    <section class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-menu__nav"">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">About</a></li>
+            <li class="mobile-menu__item"><a href="#services" class="mobile-menu__link">Services</a></li>
+            <li class="mobile-menu__item"><a href="#projects" class="mobile-menu__link">Projects</a></li>
           </ul>
         </nav>
         <button class="button button--secondary">CONTACT</button>
@@ -50,33 +50,33 @@
   </header>
 
   <main>
-    <!-- Features -->
-    <section class="features">
-      <article class="features__item features__article">
-        <h2 class="features__title">Transform your brand</h2>
-        <p class="features__text">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+    <!-- About -->
+    <section class="about" id="about">
+      <article class="about__item about__article">
+        <h2 class="about__title">Transform your brand</h2>
+        <p class="about__text">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
         <a href="" class="u-link u-link--secondary">LEARN MORE</a>
       </article>
       
-      <picture class="features__item">
+      <picture class="about__item">
         <source srcset="./images/mobile/image-transform.jpg" media=(min-width: 375px)>
-        <img src="./images/desktop/image-transform.jpg" class="features__image" alt="">
+        <img src="./images/desktop/image-transform.jpg" class="about__image" alt="">
       </picture>
 
-      <picture class="features__item">
+      <picture class="about__item">
         <source srcset="./images/mobile/image-stand-out.jpg" media=(min-width: 375px)>
-        <img src="./images/desktop/image-stand-out.jpg" class="features__image" alt="">
+        <img src="./images/desktop/image-stand-out.jpg" class="about__image" alt="">
       </picture>
 
-      <article class="features__item features__article">
-        <h2 class="features__title">Stand out to the right audience</h2>
-        <p class="features__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+      <article class="about__item about__article">
+        <h2 class="about__title">Stand out to the right audience</h2>
+        <p class="about__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
         <a href="" class="u-link u-link--primary">LEARN MORE</a>
       </article>
     </section>
 
     <!-- Services -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__wrapper">
         <img src="./images/desktop/image-graphic-design.jpg" class="services__image" alt="">
         <article class="services__article">
@@ -98,7 +98,7 @@
     <section class="testimonials container">
       <h5 class="testimonials__title">CLIENT TESTIMONIALS</h5>
 
-      <div class="testimonials__items">
+      <div class="testimonials__wrapper">
         <div class="testimonials__item">
           <img src="./images/image-emily.jpg" class="testimonials__avatar" alt="Emily profile picture">
           <p class="testimonials__text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
@@ -132,7 +132,7 @@
     </section>
 
     <!-- Gallery -->
-    <section class="gallery">
+    <section class="gallery" id="projects">
       <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="gallery__image">
       <img src="./images/desktop/image-gallery-orange.jpg" alt="" class="gallery__image">
       <img src="./images/desktop/image-gallery-cone.jpg" alt="" class="gallery__image">
@@ -145,9 +145,9 @@
     <img src="./images/logo.svg" class="footer__logo" alt="">
 
     <nav class="footer__nav">
-      <a href="" class="footer__link">About</a>
-      <a href="" class="footer__link">Services</a>
-      <a href="" class="footer__link">Projects</a>
+      <a href="#about" class="footer__link">About</a>
+      <a href="#services" class="footer__link">Services</a>
+      <a href="#projects" class="footer__link">Projects</a>
     </nav>
 
     <div class="social">
@@ -162,7 +162,16 @@
 
   <script>
     document.getElementById("toggle").addEventListener("click", ()=> {
-      document.getElementById("mobile-navbar").classList.toggle("toggle");
+      document.getElementById("mobile-menu").classList.toggle("toggle");
+      document.getElementById("toggle").classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+      if( document.getElementById("mobile-menu").classList.contains("toggle") &&  document.getElementById("toggle").classList.contains("active"))
+      if( !document.getElementById("toggle").contains(e.target) && !document.getElementById("mobile-menu").contains(e.target)){
+        document.getElementById("mobile-menu").classList.remove("toggle");
+        document.getElementById("toggle").classList.remove("active");
+      }
     });
   </script>
 </body>

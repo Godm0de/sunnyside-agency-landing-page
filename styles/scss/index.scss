@@ -1,5 +1,6 @@
 
 // Generic
+@use "./generic/smooth-scroll";
 @use "./generic/box-sizing";
 @use "./generic/normalize";
 @use "./generic/typography";
@@ -17,14 +18,14 @@
 
 
 @use "./components/navbar";
-@use "./components/mobile-navbar";
-@use "./components/gallery";
+@use "./components/mobile-menu";
+@use "./components/gallery"; 
 @use "./components/social";
 
 
 @use "./components/header";
 @use "./components/hero";
-@use "./components/features";
+@use "./components/about";
 @use "./components/testimonials";
 @use "./components/services"; 
 @use "./components/footer";
