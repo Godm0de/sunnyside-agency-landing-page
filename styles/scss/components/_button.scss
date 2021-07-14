@@ -1,7 +1,7 @@
 @use "../settings/typography";
 @use "../settings/colors";
 
-.button{
+.button {
     padding: 0.8889rem 1.7778rem;
     border: 0;
     border-radius: 1.5556rem;
@@ -12,23 +12,23 @@
 
     cursor: pointer;
 
-    @each $name, $color in colors.$color-theme { 
-        @if($name == "light") {
+    @each $name, $color in colors.$color-theme {
+        @if ($name == "light") {
             &--#{$name} {
                 color: colors.$btn-text-color;
                 background: $color;
-                
+
                 transition: background colors.$opacity-transition;
                 &:hover {
                     color: $color;
                     background: rgba($color, 0.25);
                 }
             }
-        }@else {
+        } @else {
             &--#{$name} {
                 color: colors.$btn-text-color;
                 background: $color;
-                
+
                 transition: background colors.$opacity-transition;
                 &:hover {
                     background: rgba($color, 0.25);

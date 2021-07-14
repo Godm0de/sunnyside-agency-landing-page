@@ -1,12 +1,14 @@
 @use "../settings/layout";
 
-.gallery{
+.gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(clamp(100%/(4 + 1) + 0.1%,(#{layout.$md-bp} - 100vw)*1000,100%/(2 + 1) + 0.1%),1fr));
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(clamp(100%/ (4 + 1) + 0.1%, (#{layout.$md-bp} - 100vw) * 1000, 100%/ (2 + 1) + 0.1%), 1fr)
+    );
     margin-top: 86px;
 
-
-    .gallery__image{
+    .gallery__image {
         display: block;
         width: 100%;
         height: auto;

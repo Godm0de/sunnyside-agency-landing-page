@@ -23,21 +23,19 @@
         }
     }
 
-    &__arrow{
+    &__arrow {
         margin: 3.6111rem 0 0 0;
         animation: slide 0.5s linear;
     }
-
 }
 
 @keyframes slide {
-    from{
+    from {
         opacity: 0;
         transform: translateY(-20%);
-
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }

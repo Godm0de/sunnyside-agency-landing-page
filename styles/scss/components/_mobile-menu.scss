@@ -1,6 +1,6 @@
 @use "../settings/colors";
 
-.mobile-menu{
+.mobile-menu {
     position: absolute;
     min-width: calc(100% - 1.3333rem * 2);
 
@@ -18,14 +18,14 @@
     transform: translateY(-10%);
     transition: visibility 0s, opacity 0.5s linear, transform 0.3s linear;
 
-    &__list{
+    &__list {
         list-style: none;
         text-align: center;
         padding: 0;
         margin: 0;
     }
 
-    &__item{
+    &__item {
         margin-bottom: 1.7778rem;
     }
 
@@ -39,9 +39,8 @@
         }
     }
 
-
-    &::before{
-        content: '';
+    &::before {
+        content: "";
         position: absolute;
         bottom: 100%;
         right: 0;
@@ -52,7 +51,7 @@
     }
 }
 
-.mobile-menu.toggle{
+.mobile-menu.toggle {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);

@@ -4,15 +4,18 @@
 @use "../tools/media-screen" as mixin;
 .about {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(100%/ (2 + 1) + 0.1%, (#{layout.$md-bp} - 100vw) * 1000, 100%), 1fr));
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(clamp(100%/ (2 + 1) + 0.1%, (#{layout.$md-bp} - 100vw) * 1000, 100%), 1fr)
+    );
 
     &__article {
         display: flex;
         flex-direction: column;
         align-items: center;
         align-self: center;
-        padding-left:  #{layout.$ct-min-padding};
-        padding-right:  #{layout.$ct-min-padding};
+        padding-left: #{layout.$ct-min-padding};
+        padding-right: #{layout.$ct-min-padding};
         margin: 3.5556rem 0;
 
         @include mixin.media-screen(layout.$md-bp) {
@@ -45,7 +48,7 @@
         font-weight: 600;
         color: colors.$param-text-color;
 
-        @include mixin.media-screen(layout.$md-bp) { 
+        @include mixin.media-screen(layout.$md-bp) {
             text-align: left;
         }
     }
