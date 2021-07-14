@@ -1,6 +1,6 @@
 @use "../settings/colors";
 
-.mobile-navbar{
+.mobile-menu{
     position: absolute;
     min-width: calc(100% - 1.3333rem * 2);
 
@@ -52,7 +52,7 @@
     }
 }
 
-.mobile-navbar.toggle{
+.mobile-menu.toggle{
     visibility: visible;
     opacity: 1;
     transform: translateY(0);

@@ -1,28 +1,30 @@
 @use "../settings/typography";
 @use "../settings/colors";
+@use "../settings/layout";
+@use "../tools/media-screen" as mixin;
 
 .testimonials{
-    margin: 180px auto;
+    margin: 3.5556rem auto;
 
     &__title{
         text-align: center;
         font-family: typography.$font-fraunces;
-        line-height: 19.73px;
-        letter-spacing: 4px;
+        line-height: 1.0961rem;
+        letter-spacing: 0.2222rem;
         color: colors.$testimonial-title-color;
         margin: 0;
     }
 
-    &__items{
+    &__wrapper{
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(clamp(100%/(3 + 1) + 0.1%,(728px - 100vw)*1000,100%),1fr));
-        gap: 30px;
-        padding: 82px 0;
+        grid-template-columns: repeat(auto-fit,minmax(clamp(100%/(3 + 1) + 0.1%,(#{layout.$md-bp} - 100vw)*1000,100%),1fr));
+        gap: 3.5556rem;
+        padding: 4.5556rem 0;
     }
 
     &__avatar{
-        width: 72px;
-        height: 72px;
+        width: 4rem;
+        height: 4rem;
         clip-path: circle();
     }
 
@@ -30,22 +32,23 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        gap:30px;
+        gap: 1.6667rem;
         align-items: center;
-        max-width: 350px;
+        max-width: 19.4444rem;
         justify-self: center;
     }
 
     &__info {
         text-align: center;
-        margin-top: 37px;
+        margin-bottom: 2.0556rem;
+        margin-top: 0;
     }
 
     &__text{
         text-align: center;
         color: colors.$testimonial-text-color;
-        line-height: 32px;
-        margin: 32px 0;
+        line-height: 1.7778rem;
+        margin: 1.7778rem 0;
     }
 
     &__name{
@@ -54,7 +57,23 @@
     }
 
     &__range{
-        margin: 9px 0 0 0;
+        margin: 0.5rem 0 0 0;
         color: colors.$testimonial-title-color;
+    }
+
+    @include mixin.media-screen(layout.$md-bp) { 
+        margin: 10rem auto;
+
+        &__info {
+            margin-top: 2.0556rem;
+        }
+
+        &__item { 
+            justify-content: space-between;
+        }
+
+        &__wrapper{
+            gap: 1.6667rem;
+        }
     }
 }
