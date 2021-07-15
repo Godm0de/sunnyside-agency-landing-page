@@ -386,8 +386,11 @@ p, a, span, li {
   font-size: 0.7777777778rem;
 }
 
-body {
+html {
   font-size: 18px;
+}
+
+body {
   background-color: #fffdfa;
 }
 
@@ -408,7 +411,7 @@ a, a:link, a:visited, a:active {
 }
 
 .button {
-  padding: 0.8889rem 1.7778rem;
+  padding: 0.8889em 1.7778em;
   border: 0;
   border-radius: 1.5556rem;
   font-family: "Fraunces", serif;
@@ -470,7 +473,7 @@ a, a:link, a:visited, a:active {
   position: relative;
   color: #23303e;
   font-family: "Fraunces", serif;
-  font-size: 0.8333333333rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 .u-link::after {
@@ -530,6 +533,9 @@ a, a:link, a:visited, a:active {
 }
 .navbar__nav {
   margin-left: auto;
+}
+.navbar__icon {
+  width: 170px;
 }
 
 .mobile-menu {
@@ -638,10 +644,10 @@ a, a:link, a:visited, a:active {
   font-family: "Fraunces", serif;
   color: white;
   font-size: 2.2222222222rem;
+  font-weight: 900;
   text-align: center;
   line-height: 2.7222rem;
-  font-weight: 900;
-  letter-spacing: 0.3472rem;
+  letter-spacing: 0.4861rem;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -779,6 +785,9 @@ a, a:link, a:visited, a:active {
   .testimonials {
     margin: 10rem auto;
   }
+  .testimonials__title {
+    font-size: 1.1111rem;
+  }
   .testimonials__info {
     margin-top: 2.0556rem;
   }
@@ -838,6 +847,8 @@ a, a:link, a:visited, a:active {
   padding: 3.5556rem 2.1667rem 4.4444rem 2.1667rem;
 }
 .footer__logo {
+  width: 9.4444rem;
+  height: auto;
   filter: invert(36%) sepia(71%) saturate(351%) hue-rotate(118deg) brightness(50%) contrast(88%);
 }
 .footer__nav {

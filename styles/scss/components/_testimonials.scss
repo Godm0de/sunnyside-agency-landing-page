@@ -67,6 +67,10 @@
     @include mixin.media-screen(layout.$md-bp) {
         margin: 10rem auto;
 
+        &__title {
+            font-size: 1.1111rem;
+        }
+
         &__info {
             margin-top: 2.0556rem;
         }

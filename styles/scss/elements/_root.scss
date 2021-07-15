@@ -1,0 +1,5 @@
+@use "../settings/typography";
+
+html {
+    font-size: typography.$fs-size;
+}

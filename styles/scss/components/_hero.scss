@@ -13,10 +13,10 @@
         font-family: typography.$font-fraunces;
         color: colors.$light-color;
         font-size: typography.$fs-title-mobile-hero;
+        font-weight: 900;
         text-align: center;
         line-height: 2.7222rem;
-        font-weight: 900;
-        letter-spacing: 0.3472rem;
+        letter-spacing: 0.4861rem;
 
         @include mixin.media-screen(layout.$md-bp) {
             font-size: typography.$fs-title-hero;

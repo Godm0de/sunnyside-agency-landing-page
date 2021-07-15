@@ -21,7 +21,7 @@
         border-radius: 1.5556rem;
         z-index: -1;
         background: colors.$btn-text-color;
-        transition: opacity colors.$opacity-transition; //To do, globalize in settings
+        transition: opacity colors.$opacity-transition;
     }
 
     &--primary {
