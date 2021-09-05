@@ -753,7 +753,7 @@ a, a:link, a:visited, a:active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(clamp(100%/ (3 + 1) + 0.1%, (768px - 100vw) * 1000, 100%), 1fr));
   gap: 3.5556rem;
-  padding: 4.5556rem 0;
+  padding: 4.5556rem 0 0.3889rem 0;
 }
 .testimonials__avatar {
   width: 4rem;
@@ -764,7 +764,6 @@ a, a:link, a:visited, a:active {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 1.6667rem;
   align-items: center;
   max-width: 100%;
   justify-self: center;
@@ -776,7 +775,7 @@ a, a:link, a:visited, a:active {
   text-align: center;
   color: #5a636c;
   line-height: 1.7778rem;
-  margin: 1.7778rem 0;
+  margin: 3.2222rem 0 3.8333rem 0;
 }
 .testimonials__name {
   margin: 0;
@@ -789,9 +788,6 @@ a, a:link, a:visited, a:active {
 @media screen and (min-width: 768px) {
   .testimonials__title {
     font-size: 1.1111rem;
-  }
-  .testimonials__info {
-    margin-top: 2.0556rem;
   }
   .testimonials__item {
     justify-content: space-between;
