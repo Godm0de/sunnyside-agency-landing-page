@@ -681,19 +681,20 @@ a, a:link, a:visited, a:active {
   flex-direction: column;
   align-items: center;
   align-self: center;
+  padding: 0 1.3333rem;
 }
 @media screen and (min-width: 768px) {
   .about__article {
     align-items: flex-start;
-    max-width: 31vw;
+    max-width: 35vw;
   }
   .about__article:first-child {
     margin-left: auto;
-    margin-right: 5.5556rem;
+    margin-right: calc(5.5556rem - 1.3333rem*2);
   }
   .about__article:last-child {
     margin-right: auto;
-    margin-left: 5.5556rem;
+    margin-left: calc(5.5556rem - 1.3333rem*2);
   }
 }
 .about__title {
