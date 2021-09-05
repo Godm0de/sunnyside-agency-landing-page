@@ -21,17 +21,14 @@
 
     &__article {
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         bottom: 0;
-        left: 25%;
-        right: 25%;
         margin: 3.2778rem 0;
         text-align: center;
         width: 100%;
         padding: 0 #{layout.$ct-min-padding};
-
-        @include mixin.media-screen(layout.$md-bp) {
-            max-width: 47ch;
-        }
     }
 
     &__title {
@@ -42,5 +39,9 @@
     &__text {
         margin: 0;
         line-height: 1.5rem;
+
+        @include mixin.media-screen(layout.$md-bp) {
+            max-width: 47ch;
+        }
     }
 }
