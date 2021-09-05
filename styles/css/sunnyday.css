@@ -537,7 +537,9 @@ a, a:link, a:visited, a:active {
   margin-left: auto;
 }
 .navbar__logo {
-  min-width: clamp(6.8689rem ,12.57%, 9.4444rem);
+  width: 12.57%;
+  min-width: 6.8689rem;
+  max-width: 9.4444rem;
 }
 
 .mobile-menu {
