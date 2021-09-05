@@ -22,11 +22,11 @@
     &__article {
         position: absolute;
         bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto 3.2778rem auto;
+        left: 25%;
+        right: 25%;
+        margin: 3.2778rem 0;
         text-align: center;
-        max-width: 100%;
+        width: 100%;
         padding: 0 #{layout.$ct-min-padding};
 
         @include mixin.media-screen(layout.$md-bp) {
