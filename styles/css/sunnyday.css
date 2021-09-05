@@ -739,7 +739,7 @@ a, a:link, a:visited, a:active {
 }
 
 .testimonials {
-  margin: 3.5556rem auto;
+  margin: 8.8889rem auto;
 }
 .testimonials__title {
   text-align: center;
@@ -787,9 +787,6 @@ a, a:link, a:visited, a:active {
   color: #a7abae;
 }
 @media screen and (min-width: 768px) {
-  .testimonials {
-    margin: 10rem auto;
-  }
   .testimonials__title {
     font-size: 1.1111rem;
   }
