@@ -39,9 +39,8 @@
     &__text {
         margin: 0;
         line-height: 1.5rem;
-
-        @include mixin.media-screen(layout.$md-bp) {
-            max-width: 47ch;
-        }
+        width: 100%;
+        max-width: 40ch;
+        
     }
 }

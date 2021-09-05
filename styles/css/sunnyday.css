@@ -838,11 +838,8 @@ a, a:link, a:visited, a:active {
 .services__text {
   margin: 0;
   line-height: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  .services__text {
-    max-width: 47ch;
-  }
+  width: 100%;
+  max-width: 40ch;
 }
 
 .footer {
