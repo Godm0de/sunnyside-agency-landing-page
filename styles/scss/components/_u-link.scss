@@ -9,19 +9,19 @@
     font-weight: 700;
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -27%;
         left: -10%;
         right: 0;
         opacity: 0.25;
         display: block;
-        height: 10px;
+        height: 10.0008px;
         min-width: 120%;
-        border-radius: 28px;
-        z-index: -1; 
+        border-radius: 1.5556rem;
+        z-index: -1;
         background: colors.$btn-text-color;
-        transition: opacity colors.$opacity-transition; //To do, globalize in settings
+        transition: opacity colors.$opacity-transition;
     }
 
     &--primary {
@@ -31,12 +31,12 @@
     }
 
     &--secondary {
-        &::after { 
+        &::after {
             background: colors.$secondary-color;
         }
     }
 }
 
-.u-link:hover::after{
+.u-link:hover::after {
     opacity: 1;
 }

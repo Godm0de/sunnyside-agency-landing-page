@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Meta -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This is a solution to the Sunnyside agency landing page challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects." />
+  <meta name="author" content="Godm0de" />
+  <meta name="og:image" content="paste-image.jpg" />
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Styles -->
@@ -12,35 +19,37 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+    rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="icon" type="image/gif" href="./images/favicon-32x32.png">
 </head>
+
 <body>
   <header class="header">
     <section class="navbar">
       <img src="./images/logo.svg" alt="Sunnyside logo" class="navbar__logo">
       <nav class="navbar__nav hide-xs show-md">
         <ul class="navbar__list">
-          <li class="navbar__item"><a href="" class="navbar__link">About</a></li>
-          <li class="navbar__item"><a href="" class="navbar__link">Services</a></li>
-          <li class="navbar__item"><a href="" class="navbar__link">Projects</a></li>
+          <li class="navbar__item"><a href="#about" class="navbar__link">About</a></li>
+          <li class="navbar__item"><a href="#services" class="navbar__link">Services</a></li>
+          <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
         </ul>
       </nav>
       <button class="button button--light hide-xs show-md">CONTACT</button>
       <button class="navbar__toggle hide-md" id="toggle"><img src="./images/icon-hamburger.svg" alt=""></button>
     </section>
 
-    <section class="mobile-navbar" id="mobile-navbar">
-        <nav class="mobile-navbar__nav"">
-          <ul class="mobile-navbar__list">
-            <li class="mobile-navbar__item"><a href="" class="mobile-navbar__link">About</a></li>
-            <li class="mobile-navbar__item"><a href="" class="mobile-navbar__link">Services</a></li>
-            <li class="mobile-navbar__item"><a href="" class="mobile-navbar__link">Projects</a></li>
-          </ul>
-        </nav>
-        <button class="button button--secondary">CONTACT</button>
+    <section class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu__nav">
+          <ul class=" mobile-menu__list">
+        <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">About</a></li>
+        <li class="mobile-menu__item"><a href="#services" class="mobile-menu__link">Services</a></li>
+        <li class="mobile-menu__item"><a href="#projects" class="mobile-menu__link">Projects</a></li>
+        </ul>
+      </nav>
+      <button class="button button--secondary">CONTACT</button>
     </section>
 
     <section class="hero">
@@ -50,46 +59,50 @@
   </header>
 
   <main>
-    <!-- Features -->
-    <section class="features">
-      <article class="features__item features__article">
-        <h2 class="features__title">Transform your brand</h2>
-        <p class="features__text">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+    <!-- About -->
+    <section class="about" id="about">
+      <article class="about__item about__article">
+        <h2 class="about__title">Transform your brand</h2>
+        <p class="about__text">We are a full-service creative agency specializing in helping brands grow fast. Engage
+          your clients through compelling visuals that do most of the marketing for you.</p>
         <a href="" class="u-link u-link--secondary">LEARN MORE</a>
       </article>
-      
-      <picture class="features__item">
-        <source srcset="./images/mobile/image-transform.jpg" media=(min-width: 375px)>
-        <img src="./images/desktop/image-transform.jpg" class="features__image" alt="">
+
+      <picture class="about__item">
+        <source srcset="./images/mobile/image-transform.jpg" media="(min-width: 375px)">
+        <img src="./images/desktop/image-transform.jpg" class="about__image" alt="">
       </picture>
 
-      <picture class="features__item">
-        <source srcset="./images/mobile/image-stand-out.jpg" media=(min-width: 375px)>
-        <img src="./images/desktop/image-stand-out.jpg" class="features__image" alt="">
+      <picture class="about__item">
+        <source srcset="./images/mobile/image-stand-out.jpg" media="(min-width: 375px)">
+        <img src="./images/desktop/image-stand-out.jpg" class="about__image" alt="">
       </picture>
 
-      <article class="features__item features__article">
-        <h2 class="features__title">Stand out to the right audience</h2>
-        <p class="features__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+      <article class="about__item about__article">
+        <h2 class="about__title">Stand out to the right audience</h2>
+        <p class="about__text">Using a collaborative formula of designers, researchers, photographers, videographers,
+          and copywriters, we’ll build and extend your brand in digital places. </p>
         <a href="" class="u-link u-link--primary">LEARN MORE</a>
       </article>
     </section>
 
     <!-- Services -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__wrapper">
         <img src="./images/desktop/image-graphic-design.jpg" class="services__image" alt="">
         <article class="services__article">
           <h2 class="services__title graphic-text-color">Graphic Design</h2>
-          <p class="services__text graphic-text-color">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          <p class="services__text graphic-text-color">Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’ attention.</p>
         </article>
       </div>
-  
+
       <div class="services__wrapper">
         <img src="./images/desktop/image-photography.jpg" class="services__image" alt="">
         <article class="services__article">
           <h2 class="services__title photo-text-color">Photography</h2>
-          <p class="services__text photo-text-color">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          <p class="services__text photo-text-color">Increase your credibility by getting the most stunning,
+            high-quality photos that improve your business image.</p>
         </article>
       </div>
     </section>
@@ -98,30 +111,33 @@
     <section class="testimonials container">
       <h5 class="testimonials__title">CLIENT TESTIMONIALS</h5>
 
-      <div class="testimonials__items">
-        <div class="testimonials__item">
+      <div class="testimonials__wrapper">
+        <div class="testimonials__card">
           <img src="./images/image-emily.jpg" class="testimonials__avatar" alt="Emily profile picture">
-          <p class="testimonials__text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <p class="testimonials__text">We put our trust in Sunnyside and they delivered, making sure our needs were met
+            and deadlines were always hit.</p>
 
           <div class="testimonials__info">
             <h3 class="testimonials__name">Emily R.</h3>
             <p class="testimonials__range">Marketing Director</p>
           </div>
         </div>
-  
-        <div class="testimonials__item">
+
+        <div class="testimonials__card">
           <img src="./images/image-thomas.jpg" class="testimonials__avatar" alt="Emily profile picture">
-          <p class="testimonials__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <p class="testimonials__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success
+            made it a satisfying and enjoyable experience.</p>
 
           <div class="testimonials__info">
             <h3 class="testimonials__name">Thomas S.</h3>
             <p class="testimonials__range">Chief Operating Officer</p>
           </div>
         </div>
-  
-        <div class="testimonials__item">
+
+        <div class="testimonials__card">
           <img src="./images/image-jennie.jpg" class="testimonials__avatar" alt="Emily profile picture">
-          <p class="testimonials__text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <p class="testimonials__text">Incredible end result! Our sales increased over 400% when we worked with
+            Sunnyside. Highly recommended!</p>
 
           <div class="testimonials__info">
             <h3 class="testimonials__name">Jennie F.</h3>
@@ -132,7 +148,7 @@
     </section>
 
     <!-- Gallery -->
-    <section class="gallery">
+    <section class="gallery" id="projects">
       <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="gallery__image">
       <img src="./images/desktop/image-gallery-orange.jpg" alt="" class="gallery__image">
       <img src="./images/desktop/image-gallery-cone.jpg" alt="" class="gallery__image">
@@ -145,25 +161,21 @@
     <img src="./images/logo.svg" class="footer__logo" alt="">
 
     <nav class="footer__nav">
-      <a href="" class="footer__link">About</a>
-      <a href="" class="footer__link">Services</a>
-      <a href="" class="footer__link">Projects</a>
+      <a href="#about" class="footer__link">About</a>
+      <a href="#services" class="footer__link">Services</a>
+      <a href="#projects" class="footer__link">Projects</a>
     </nav>
 
     <div class="social">
-      <a href="" class="social__link"><img src="./images/icon-facebook.svg" alt="" class="social__icon"></a>
-      <a href="" class="social__link"><img src="./images/icon-twitter.svg" alt="" class="social__icon"></a>
-      <a href="" class="social__link"><img src="./images/icon-instagram.svg" alt="" class="social__icon"></a>
-      <a href="" class="social__link"><img src="./images/icon-pinterest.svg" alt="" class="social__icon"></a>
+      <a href="" class="social__link" aria-label="Check us out in Facebook"><img src="./images/icon-facebook.svg" alt="" class="social__icon"></a>
+      <a href="" class="social__link" aria-label="Check us out in Twitter"><img src="./images/icon-twitter.svg" alt="" class="social__icon"></a>
+      <a href="" class="social__link" aria-label="Check us out in Instagram"><img src="./images/icon-instagram.svg" alt="" class="social__icon"></a>
+      <a href="" class="social__link" aria-label="Check us out in Pinterest"><img src="./images/icon-pinterest.svg" alt="" class="social__icon"></a>
     </div>
 
     <!--social-->
   </footer>
-
-  <script>
-    document.getElementById("toggle").addEventListener("click", ()=> {
-      document.getElementById("mobile-navbar").classList.toggle("toggle");
-    });
-  </script>
+  <script src="./scripts/index.js"></script>
 </body>
+
 </html>

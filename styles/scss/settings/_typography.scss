@@ -32,9 +32,12 @@ $headings-sizes: (
 $fs-line-headings: math.div($_fs-base, 49) + rem;
 
 $fs-p: $_fs-18;
-$fs-link: $_fs-15;
+$fs-link: $_fs-18;
 $fs-title-mobile-hero: $_fs-40;
 $fs-title-hero: $_fs-56;
 $fs-nav: $_fs-18;
 $fs-button: $_fs-15;
 $fs-res-menu: $_fs-20;
+
+$fs-title-about: $_fs-40;
+$fs-title-mobile-about:$_fs-32;

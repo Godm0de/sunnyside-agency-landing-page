@@ -1,19 +1,26 @@
 @use "../settings/colors";
+@use "../settings/layout";
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &__toggle{
+    &__toggle {
         background: none;
         border: none;
-
+        opacity: 1;
+        transition: opacity colors.$opacity-transition;
         cursor: pointer;
+
+        &.active{
+            opacity: 0.5;
+        }
     }
 
     &__list {
         list-style: none;
+        padding: 0;
     }
 
     &__item {
@@ -32,5 +39,9 @@
 
     &__nav {
         margin-left: auto;
+    }
+
+    &__logo {
+        min-width: clamp(6.8689rem ,12.57%, 9.4444rem);
     }
 }

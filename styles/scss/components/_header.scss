@@ -1,12 +1,12 @@
-.header{
+.header {
     min-height: 100vh;
-    padding: 1.7778rem 1.3333rem;
+    padding: 1.8889rem 2.4444rem;
 
     background: url("../../images/mobile/image-header.jpg");
     background-position: center;
     background-size: cover;
 
-    @media  screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         min-height: 800px;
         background: url("../../images/desktop/image-header.jpg");
         background-position: bottom;

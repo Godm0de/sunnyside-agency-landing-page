@@ -3,14 +3,13 @@
 .social {
     display: flex;
     flex-wrap: wrap;
-    gap: 28px;
+    gap: 1.5556rem;
 
-    &__icon{
+    &__icon {
         display: block;
-        
     }
 
-    &__link:hover &__icon{
+    &__link:hover &__icon {
         animation: bright 1s linear;
     }
 }
