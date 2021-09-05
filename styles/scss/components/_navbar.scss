@@ -20,6 +20,7 @@
 
     &__list {
         list-style: none;
+        padding: 0;
     }
 
     &__item {
@@ -40,7 +41,7 @@
         margin-left: auto;
     }
 
-    &__icon{
-        width: 170px;
+    &__logo {
+        min-width: clamp(6.8689rem ,12.57%, 9.4444rem);
     }
 }

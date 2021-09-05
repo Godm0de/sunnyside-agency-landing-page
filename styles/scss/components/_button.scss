@@ -2,13 +2,14 @@
 @use "../settings/colors";
 
 .button {
-    padding: 0.8889em 1.7778em;
+    padding: 1em 2em 1.06em 2.13em;
     border: 0;
     border-radius: 1.5556rem;
 
     font-family: typography.$font-fraunces;
     font-weight: 700;
     line-height: 1.3889rem;
+    font-size: typography.$fs-button;
 
     cursor: pointer;
 

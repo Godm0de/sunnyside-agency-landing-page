@@ -411,12 +411,13 @@ a, a:link, a:visited, a:active {
 }
 
 .button {
-  padding: 0.8889em 1.7778em;
+  padding: 1em 2em 1.06em 2.13em;
   border: 0;
   border-radius: 1.5556rem;
   font-family: "Fraunces", serif;
   font-weight: 700;
   line-height: 1.3889rem;
+  font-size: 0.8333333333rem;
   cursor: pointer;
 }
 .button--light {
@@ -519,6 +520,7 @@ a, a:link, a:visited, a:active {
 }
 .navbar__list {
   list-style: none;
+  padding: 0;
 }
 .navbar__item {
   display: inline;
@@ -534,8 +536,8 @@ a, a:link, a:visited, a:active {
 .navbar__nav {
   margin-left: auto;
 }
-.navbar__icon {
-  width: 170px;
+.navbar__logo {
+  min-width: clamp(6.8689rem ,12.57%, 9.4444rem);
 }
 
 .mobile-menu {
@@ -620,7 +622,7 @@ a, a:link, a:visited, a:active {
 }
 .header {
   min-height: 100vh;
-  padding: 1.7778rem 1.3333rem;
+  padding: 1.8889rem 2.4444rem;
   background: url("../../images/mobile/image-header.jpg");
   background-position: center;
   background-size: cover;
