@@ -14,11 +14,7 @@
         display: block;
         width: 100%;
         height: auto;
-<<<<<<< HEAD
-        min-height: 37.5rem;
-=======
         min-height: 33.3333rem;
->>>>>>> master
 
         object-fit: cover;
     }
@@ -30,17 +26,12 @@
         right: 25%;
         margin: 3.2778rem 0;
         text-align: center;
-<<<<<<< HEAD
-        max-width: 49ch;
-        padding: 0 24px;
-=======
         width: 100%;
         padding: 0 #{layout.$ct-min-padding};
 
         @include mixin.media-screen(layout.$md-bp) {
             max-width: 47ch;
         }
->>>>>>> master
     }
 
     &__title {
