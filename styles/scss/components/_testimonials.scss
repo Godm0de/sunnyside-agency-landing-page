@@ -22,7 +22,7 @@
             minmax(clamp(100%/ (3 + 1) + 0.1%, (#{layout.$md-bp} - 100vw) * 1000, 100%), 1fr)
         );
         gap: 3.5556rem;
-        padding: 4.5556rem 0 1rem 0;
+        padding: 4.5556rem 0;
     }
 
     &__avatar {
@@ -43,8 +43,6 @@
 
     &__info {
         text-align: center;
-        margin-bottom: 2.0556rem;
-        margin-top: 0;
     }
 
     &__text {
