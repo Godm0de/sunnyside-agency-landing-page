@@ -382,8 +382,11 @@ p, a, span, li {
   font-size: 0.7777777778rem;
 }
 
-body {
+:root {
   font-size: 18px;
+}
+
+body {
   background-color: #fffdfa;
 }
 
@@ -777,7 +780,7 @@ a, a:link, a:visited, a:active {
   display: block;
   width: 100%;
   height: auto;
-  min-height: 600px;
+  min-height: 37.5rem;
   object-fit: cover;
 }
 .services__article {
@@ -787,7 +790,7 @@ a, a:link, a:visited, a:active {
   right: 0;
   margin: 0 auto 59px auto;
   text-align: center;
-  max-width: 47ch;
+  max-width: 49ch;
   padding: 0 24px;
 }
 .services__title {
