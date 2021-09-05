@@ -23,12 +23,12 @@
 
             &:first-child {
                 margin-left: auto;
-                margin-right: calc(5.5556rem - #{layout.$ct-min-padding}*2);
+                margin-right: calc(6.1111rem - #{layout.$ct-min-padding});
             }
 
             &:last-child {
                 margin-right: auto;
-                margin-left: calc(5.5556rem - #{layout.$ct-min-padding}*2);
+                margin-left: calc(6.1111rem - #{layout.$ct-min-padding});
             }
         }
     }

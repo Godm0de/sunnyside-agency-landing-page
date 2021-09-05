@@ -692,11 +692,11 @@ a, a:link, a:visited, a:active {
   }
   .about__article:first-child {
     margin-left: auto;
-    margin-right: calc(5.5556rem - 1.3333rem*2);
+    margin-right: calc(6.1111rem - 1.3333rem);
   }
   .about__article:last-child {
     margin-right: auto;
-    margin-left: calc(5.5556rem - 1.3333rem*2);
+    margin-left: calc(6.1111rem - 1.3333rem);
   }
 }
 .about__title {
