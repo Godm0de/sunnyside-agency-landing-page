@@ -739,7 +739,7 @@ a, a:link, a:visited, a:active {
 }
 
 .testimonials {
-  margin: 8.8889rem auto;
+  margin: 9.0556rem auto 8.8889rem auto;
 }
 .testimonials__title {
   text-align: center;
