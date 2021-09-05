@@ -4,12 +4,13 @@
 @use "../tools/media-screen" as mixin;
 
 .testimonials {
-    margin: 9.0556rem auto 8.8889rem auto;
+    margin: 8.8889rem auto;
 
     &__title {
         text-align: center;
         font-family: typography.$font-fraunces;
-        line-height: 1.0961rem;
+        line-height: 1.37rem;
+        font-weight: 900;
         letter-spacing: 0.2222rem;
         color: colors.$testimonial-title-color;
         margin: 0;

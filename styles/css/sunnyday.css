@@ -739,12 +739,13 @@ a, a:link, a:visited, a:active {
 }
 
 .testimonials {
-  margin: 9.0556rem auto 8.8889rem auto;
+  margin: 8.8889rem auto;
 }
 .testimonials__title {
   text-align: center;
   font-family: "Fraunces", serif;
-  line-height: 1.0961rem;
+  line-height: 1.37rem;
+  font-weight: 900;
   letter-spacing: 0.2222rem;
   color: #a7abae;
   margin: 0;
